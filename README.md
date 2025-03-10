@@ -1,8 +1,8 @@
-# DistilBERT Emotion Classification Model
+# Emotion Detection in Text Using Fine-Tuned DistilBERT
 
 ## Overview
 
-This project presents a fine-tuned **DistilBERT model** for emotion classification. The model has been trained to predict emotional states from text input and has achieved high performance on the evaluation set.
+This project presents a fine-tuned **DistilBERT model** for emotion classification. The model has been trained to predict emotional states from text input and has achieved excellent performance on the evaluation set.
 
 ## Model Details
 
@@ -11,15 +11,15 @@ This project presents a fine-tuned **DistilBERT model** for emotion classificati
   - **Loss**: 0.1448
   - **Accuracy**: 94.2%
 
-This model was fine-tuned on an unknown dataset to predict emotions from text, making it a reliable choice for text classification tasks involving emotional analysis.
+This model was fine-tuned on a specific dataset to predict emotions from text, making it a reliable choice for text classification tasks involving emotional analysis.
 
 ## Intended Use
 
-This model is designed to classify emotions from text input. You can use it for applications like:
+This model is designed to classify emotions from text input. It can be used for applications such as:
 - Sentiment analysis
 - Customer feedback analysis
 - Social media monitoring
-- Any other application where detecting emotion in text is useful
+- Any other application where detecting emotion in text is useful.
 
 ## Limitations
 
@@ -40,18 +40,18 @@ The model was trained using the following setup:
 
 ### Training Results:
 - **Epoch 1**: Validation Loss = 0.1857, Accuracy = 92.55%
-- **Epoch 2**: Validation Loss = 0.1448, Accuracy = 94.2%
+- **Epoch 2**: Validation Loss = 0.1448, Accuracy = 94.20%
 
 ## Framework and Libraries
 
 - **Transformers**: 4.48.3
-- **Pytorch**: 2.5.1+cu124
+- **PyTorch**: 2.5.1+cu124
 - **Datasets**: 3.3.2
 - **Tokenizers**: 0.21.0
 
 ## Usage
 
-To use the model, you can load it with the following code:
+To use the model, load it with the following code:
 
 ```python
 from transformers import pipeline
@@ -67,4 +67,4 @@ This will return the predicted emotion for the given text.
 
 ## Conclusion
 
-This **DistilBERT Emotion Classification Model** is a powerful tool for analyzing emotions in text. It’s fast, accurate, and can be easily integrated into various applications where emotion detection is required.
+This **DistilBERT Emotion Classification Model** is a powerful tool for analyzing emotions in text. It is accurate, robust, and can be easily integrated into various applications where emotion detection is necessary.
